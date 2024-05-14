@@ -59,7 +59,7 @@ $_SESSION['error']=' Wrong Username and Password';
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
-    <a href="#"><b><img src="../images/logo.png" width="81" height="93"><span class="style1">ritman </span></b><span class="style1"></span></a>  </div>
+    <a href="#"><b><img src="../images/auk.png" width="81" height="63"><span class="style1"></span></b><span class="style1"></span></a>  </div>
   <!-- /.login-logo -->
   <div class="card">
     <div class="card-body login-card-body">

@@ -57,8 +57,12 @@ $_SESSION['error']=' Wrong Email Address or Application ID';
         <div>
             <div>
 
-                <h1 class="logo-name"><img src="../images/apple-touch-icon.jpg" alt="Online student admission form" width="176" height="164"></h1>
-
+                <h1 class="logo-nam">
+                  
+                <img src="../images/auk.png" alt="Online student admission form" width="176" height="134"> 
+                </h1>
+                
+                </div>
           </div>
             <h3>&nbsp;</h3>
             <form class="m-t" role="form" method= "POST" action="">

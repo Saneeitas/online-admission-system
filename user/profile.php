@@ -211,7 +211,7 @@ $rowaccess = mysqli_fetch_array($result);
                                         </a>
                                         <div class="media-body ">
                                             <small class="pull-right text-navy"></small>
-                                            <strong>Department Applied :</strong>                    <?php echo $rowaccess['dept'];   ?><strong>  <br>
+                                            <strong>Course Applied :</strong>                    <?php echo $rowaccess['dept'];   ?><strong>  <br>
                                         </div>
                                     </div>
 									 <div class="feed-element">

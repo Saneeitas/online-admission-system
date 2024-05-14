@@ -15,7 +15,7 @@
                     </ul>
                 </li>
 			
-				<li>
+				<!-- <li>
                     <a href="chkadmission.php"><i class="fa fa-money"></i> <span class="nav-label">Get Admission Letter</span></a>
-                </li>
+                </li> -->
 			

@@ -9,6 +9,7 @@ $current_date = date('Y-m-d H:i:s');
 if(isset($_POST['btnsubmit']))
 {
 
+
 $pin = $_POST['txtpin'];
 $serial = $_POST['txtserial'];
 
@@ -136,7 +137,7 @@ alert('Invalid Scratch Card Details or Has Already been Used');
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item active"><a class="nav-link" href="/online-admission-system">Home</a></li>
 						<ul class="nav navbar-nav navbar-right">
-                        <li><a class="hover-btn-new log orange" href="#" data-toggle="modal" data-target="#login"><span>Apply</span></a></li>
+                        <li><a class="hover-btn-new log orange" href="apply/admission.php" data-toggle="modall" data-target="#login"><span>Apply</span></a></li>
                     </ul>
 						<li class="nav-item"><a class="nav-link" href="user/index.php">Dashboard</a></li>
 						

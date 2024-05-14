@@ -3,10 +3,11 @@
 .style1 {
 	color: #000000;
 	font-weight: bold;
+	text-align: center
 }
 -->
 </style>
  <div class="footer">
-          <div class="style1"> <p> All Rights Reserved. &copy; 2021  Designed By : Ndiene Justine Uko, N/2019/CSE/022 , Foundation Polytecnic, Ikot Idem,Ikot Ekpene  </p>
+          <div class="style1"> <p> All Rights Reserved. &copy; 2024  Online Admission and Information System  </p>
 </div>
 </div>

@@ -45,7 +45,7 @@ alert('Invalid Scratch Card Details or Has Already been Used');
     <meta name="viewport" content="width=device-width, initial-scale=1">
  
      <!-- Site Metas -->
-    <title>Ritman University|Online Student Admission System</title>  
+    <title>Online Admission and Information System</title>  
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -124,8 +124,8 @@ alert('Invalid Scratch Card Details or Has Already been Used');
 	<header class="top-navbar">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<div class="container-fluid">
-				<a class="navbar-brand" href="index.html">
-					<img src="images/logo.png" alt="" />
+				<a class="navbar-brand" href="index.php">
+					<img src="images/logo.pn" alt="" />
 				</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="icon-bar"></span>
@@ -134,7 +134,7 @@ alert('Invalid Scratch Card Details or Has Already been Used');
 				</button>
 				<div class="collapse navbar-collapse" id="navbars-host">
 					<ul class="navbar-nav ml-auto">
-						<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+						<li class="nav-item active"><a class="nav-link" href="/online-admission-system">Home</a></li>
 						<ul class="nav navbar-nav navbar-right">
                         <li><a class="hover-btn-new log orange" href="#" data-toggle="modal" data-target="#login"><span>Apply</span></a></li>
                     </ul>
@@ -157,14 +157,14 @@ alert('Invalid Scratch Card Details or Has Already been Used');
 		</ol>
 		<div class="carousel-inner" role="listbox">
 			<div class="carousel-item active">
-				<div id="home" class="first-section" style="background-image:url('images/slider-01.jpg');">
+				<div id="home" class="first-section" style="background-image:url('images/slider-01.jpeg');">
 					<div class="dtab">
 						<div class="container">
 							<div class="row">
 								<div class="col-md-12 col-sm-12 text-right">
 									<div class="big-tagline">
-										<h2><strong>RITMAN </strong>University, Ikot Ekpene</h2>
-	<p class="lead">Ritman University (RU) is a response to the yearning of renascent Africans for an entrepreneurial university that develops the mind for total productivity. </p>
+										<h2><strong>ONLINE </strong>Admission  and Information System</h2>
+	/* <p class="lead"> </p> */
 											<a href="#" class="hover-btn-new"><span>Contact Us</span></a>
 											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 											<a href="#" class="hover-btn-new"><span>Read More</span></a>
@@ -176,14 +176,14 @@ alert('Invalid Scratch Card Details or Has Already been Used');
 				</div><!-- end section -->
 			</div>
 			<div class="carousel-item">
-				<div id="home" class="first-section" style="background-image:url('images/slider-02.jpg');">
+				<div id="home" class="first-section" style="background-image:url('images/slider-02.jpeg');">
 					<div class="dtab">
 						<div class="container">
 							<div class="row">
 								<div class="col-md-12 col-sm-12 text-left">
 									<div class="big-tagline">
-										<h2 data-animation="animated zoomInRight">RITMAN <strong>University, Ikot Ekpene</strong></h2>
-										<p class="lead" data-animation="animated fadeInLeft">We inculcates positive values and offers resources for navigating the world with ease. </p>
+										/* <h2 data-animation="animated zoomInRight"></strong></h2>
+										<p class="lead" data-animation="animated fadeInLeft">We inculcates positive values and offers resources for navigating the world with ease. </p> */
 											<a href="#" class="hover-btn-new"><span>Contact Us</span></a>
 											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 											<a href="#" class="hover-btn-new"><span>Read More</span></a>
@@ -195,14 +195,14 @@ alert('Invalid Scratch Card Details or Has Already been Used');
 				</div><!-- end section -->
 			</div>
 			<div class="carousel-item">
-				<div id="home" class="first-section" style="background-image:url('images/slider-03.jpg');">
+				<div id="home" class="first-section" style="background-image:url('images/slider-03.jpeg');">
 					<div class="dtab">
 						<div class="container">
 							<div class="row">
 								<div class="col-md-12 col-sm-12 text-center">
 									<div class="big-tagline">
-										<h2 data-animation="animated zoomInRight"><strong>RITMAN </strong>University, Ikot Ekpene</h2>
-										<p class="lead" data-animation="animated fadeInLeft">All our courses are accredited by NUC</p>
+										/* <h2 data-animation="animated zoomInRight"></h2> */
+										/* <p class="lead" data-animation="animated fadeInLeft"></p> */
 											<a href="#" class="hover-btn-new"><span>Contact Us</span></a>
 											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 											<a href="#" class="hover-btn-new"><span>Read More</span></a>
@@ -232,14 +232,14 @@ alert('Invalid Scratch Card Details or Has Already been Used');
             <div class="section-title row text-center">
                 <div class="col-md-8 offset-md-2">
                     <h3>About Us </h3>
-                    <p align="justify" class="lead style1">Ritman   University (RU) is a response to the yearning of renascent Africans for   an entrepreneurial university that develops the mind for total productivity, inculcates positive values and offers resources   for navigating the world with ease. The National Universities   Commission’s accreditation of all academic programmes currently offered   here and granting of full license to operate in less than four years of   our existence affirms RU’s total commitment to offering quality   scholarship driven by amply qualified intellectuals and adequate   learning infrastructure. The Senator Emmanuel Ibok Essien-led Ritman   Group of Companies – a conglomerate with interests in Agriculture, Civil   &amp;amp; Electrical Engineering, Hospitality,   Information/Communication Technology, Printing, Furniture-making and   Education – which began operation on 30 March 1987 regards kick-off of   RU on November 23 2015 as the Zenith of her educational establishments,   after several years of planning. Ritman University is located about a   kilometre from Ikot Ekpene city centre. It sits on 104.2 acres of lush,   serene tropical environment with clean and green ambience ideal for   serious academic work. The campus in Ikot Ekpene, Akwa Ibom State lies between   Aba and Umuahia (in Abia State of Nigeria) and Uyo, the capital. It is   easily accessible from Calabar, Eket, Uyo, Port Harcourt Aba and Umuahia</p>
+                    <p align="justify" class="lead style1">Our online admission and information system makes applying to our programs a breeze. Apply from anywhere, anytime, track your progress, and access program details easily. This user-friendly platform saves you time, reduces paperwork, and gives you control over your educational journey. Let's get you started!
+</p>
                 </div>
             </div><!-- end title -->
         
             <div class="row align-items-center">
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                     <div class="message-box">
-                        <h4>Ritman university, ikot ekpene </h4>
                         <h2>Welcome to Online Student Admission System </h2>
                         <p>&nbsp;</p>
 
@@ -249,7 +249,7 @@ alert('Invalid Scratch Card Details or Has Already been Used');
 				
 				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                     <div class="post-media wow fadeIn">
-                        <img src="images/blog_6.jpg" alt="" width="530" height="420" class="img-fluid img-rounded">                    </div>
+                        <img src="images/auk1.jpg" alt="" width="530" height="420" class="img-fluid img-rounded">                    </div>
                     <!-- end media -->
                 </div><!-- end col -->
 			</div>

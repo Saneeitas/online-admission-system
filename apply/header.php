@@ -57,6 +57,8 @@
 
     <div class="container mainbody">
       <div class="page-header">
-        <h1><img src="../images/apple-touch-icon.jpg" alt="Daily Earnings" width="97" height="99"><span class="style1"></span></h1>
+        <h1>
+       
+        <span class="style1"></span></h1>
   </div>
       <div class="clearfix"></div>

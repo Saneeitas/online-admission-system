@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
  
      <!-- Site Metas -->
-    <title>Ritman University|Online Student Admission System</title>  
+    <title>Online Admission and Information System</title>  
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -141,7 +141,7 @@
         <div class="container">
             <div class="footer-distributed">
                 <div class="footer-center">                   
-                    <p class="footer-company-name style1">All Rights Reserved. &copy; 2021  Designed By : Ndiene Justine Uko, N/2019/CSE/022 , Foundation Polytecnic, Ikot Idem,Ikot Ekpene </p>
+                    <p class="footer-company-name style1">All Rights Reserved. &copy; 2024 Online Admission and Information System  </p>
                 </div>
             </div>
         </div><!-- end container -->

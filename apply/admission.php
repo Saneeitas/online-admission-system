@@ -149,16 +149,46 @@ alert('Problem Occured , Try Again');
                 <input type="text"  id="pass1" class="form-control" name="txtjambscore"  value="<?php if (isset($_POST['txtjambscore']))?><?php echo $_POST['txtjambscore']; ?>" required="">
               </label>
             </div>
-						<div class="form-group">
-              <label class="col-lg-12 control-label" for="pass1">Faculty:
-                <input type="text"  id="pass1" class="form-control" name="txtfaculty"  value="<?php if (isset($_POST['txtfaculty']))?><?php echo $_POST['txtfaculty']; ?>" required="">
-              </label>
-            </div>
-			<div class="form-group">
-              <label class="col-lg-12 control-label" for="pass1">Department:
-                <input type="text"  id="pass1" class="form-control" name="txtdept"  value="<?php if (isset($_POST['txtdept']))?><?php echo $_POST['txtdept']; ?>" required="">
-              </label>
-            </div>
+
+            <?php
+
+$faculties = array("Engineering", "SMS", "Science", "Computing");
+$departments = array(
+    "Software Engineering",
+    "Computer Science" ,
+    "Cyber Security",
+    "IT",
+    "Mathematics",
+    "Accounting",
+    "Business Admin",
+    "Political Science"
+
+);
+
+?>
+
+<div class="form-group">
+  <label class="col-lg-12 control-label" for="faculty">Faculty:</label>
+  <select class="form-control" id="faculty" name="txtfaculty" required>
+    <option value="">Select Faculty</option>
+    <?php foreach ($faculties as $faculty) : ?>
+      <option value="<?php echo $faculty; ?>">
+        <?php echo $faculty; ?>
+      </option>
+    <?php endforeach; ?>
+  </select>
+</div>
+<div class="form-group">
+  <label class="col-lg-12 control-label" for="department">Course:</label>
+  <select class="form-control" id="department" name="txtdept" required>
+    <option value="">Select Department</option>
+    <?php foreach ($departments as $dept) : ?>
+      <option value="<?php echo $dept; ?>">
+        <?php echo $dept; ?>
+      </option>
+    <?php endforeach; ?>
+  </select>
+</div>
 			
 			<div class="form-group">
               <label class="col-lg-12 control-label" for="pass1">SSCE(Exam Name/Year):

@@ -214,20 +214,20 @@ $row= mysqli_fetch_array($result);
 					  <input type="tel" size="77" name="txtstate" value="<?php echo $row['state'];   ?>" class="form-control" >
 					  </div>
 					   <div class="form-group"><label>Jamb Number</label>
-					  <input type="tel" size="77" name="txtjamb" value="<?php echo $row['jamb_number'];   ?>" class="form-control" >
+					  <input type="tel" size="77" name="txtjamb" value="<?php echo $row['jamb_number'];   ?>" class="form-control" disabled >
 					  </div>
 							   <div class="form-group"><label>Jamb Score</label>
-					  <input type="tel" size="77" name="txtscore" value="<?php echo $row['jamb_score'];   ?>" class="form-control" >
+					  <input type="tel" size="77" name="txtscore" value="<?php echo $row['jamb_score'];   ?>" class="form-control" disabled >
 					  </div>
 					   <div class="form-group"><label>SSCE Detail</label>
-					  <input type="tel" size="77" name="txtexam" value="<?php echo $row['ssce_details'];   ?>" class="form-control" >
+					  <input type="tel" size="77" name="txtexam" value="<?php echo $row['ssce_details'];   ?>" class="form-control" disabled>
 					  </div>	
 					   </div>
 							   <div class="form-group"><label>Faculty</label>
-					  <input type="tel" size="77" name="txtfaculty" value="<?php echo $row['facult'];   ?>" class="form-control" >
+					  <input type="tel" size="77" name="txtfaculty" value="<?php echo $row['faculty'];   ?>" class="form-control" disabled>
 					  </div>
-					   <div class="form-group"><label>Department</label>
-					  <input type="tel" size="77" name="txtdept" value="<?php echo $row['dept'];   ?>" class="form-control" >
+					   <div class="form-group"><label>Course</label>
+					  <input type="tel" size="77" name="txtdept" value="<?php echo $row['dept'];   ?>" class="form-control" disabled>
 					  </div>		                   
 						  
 									 <div class="col-sm-6">

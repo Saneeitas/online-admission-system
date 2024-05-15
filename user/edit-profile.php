@@ -36,23 +36,39 @@ $dept = mysqli_real_escape_string($conn,$_POST['txtdept']);
 $faculty = mysqli_real_escape_string($conn,$_POST['txtfaculty']);
 
 
-$image= addslashes(file_get_contents($_FILES['userImage']['tmp_name']));
-$image_name= addslashes($_FILES['userImage']['name']);
-$image_size= getimagesize($_FILES['userImage']['tmp_name']);
-move_uploaded_file($_FILES["userImage"]["tmp_name"],"../upload/" . $_FILES["userImage"]["name"]);			
-$location="upload/" . $_FILES["userImage"]["name"];
+// Check if a new image is uploaded
+if (isset($_FILES['userImage']) && $_FILES['userImage']['error'] === 0) {
+    $image = addslashes(file_get_contents($_FILES['userImage']['tmp_name']));
+    $image_name = addslashes($_FILES['userImage']['name']);
 
-			
-$sql1 = " update admission set fullname='$fullname',sex='$sex',jamb_number='$jamb',jamb_score='$score', photo='$location',state='$state',faculty='$faculty',dept='$dept',ssce_details='$exam' where email='$email'";
-   
-   if (mysqli_query($conn, $sql1)) {
+    // Get image extension
+    $image_ext = strtolower(pathinfo($image_name, PATHINFO_EXTENSION));
 
-header("Location: profile.php");
-}else{
-$_SESSION['error']='Editing Was Not Successful';
+    // Validate image extension
+    $allowed_extensions = array('png', 'jpg', 'jpeg');
+    if (!in_array($image_ext, $allowed_extensions)) {
+      $_SESSION['error'] = 'Only PNG, JPG, and JPEG image formats are allowed.';
+      return; // Exit if image is not of a valid type
+    }
+
+    $image_size = getimagesize($_FILES['userImage']['tmp_name']);
 
 
-}
+    move_uploaded_file($_FILES["userImage"]["tmp_name"], "../upload/" . $_FILES["userImage"]["name"]);
+    $location = "upload/" . $_FILES["userImage"]["name"];
+
+    // Build the SQL query with image update
+    $sql1 = "UPDATE admission SET fullname='$fullname', sex='$sex', jamb_number='$jamb', jamb_score='$score', photo='$location', state='$state', faculty='$faculty', dept='$dept', ssce_details='$exam' WHERE email='$email'";
+  } else {
+    // Build the SQL query without image update (existing image remains)
+    $sql1 = "UPDATE admission SET fullname='$fullname', sex='$sex', jamb_number='$jamb', jamb_score='$score', state='$state', faculty='$faculty', dept='$dept', ssce_details='$exam' WHERE email='$email'";
+  }
+
+  if (mysqli_query($conn, $sql1)) {
+    header("Location: profile.php");
+  } else {
+    $_SESSION['error'] = 'Editing Was Not Successful';
+  }
 }
 ?> 
 <!DOCTYPE html>
@@ -214,20 +230,20 @@ $row= mysqli_fetch_array($result);
 					  <input type="tel" size="77" name="txtstate" value="<?php echo $row['state'];   ?>" class="form-control" >
 					  </div>
 					   <div class="form-group"><label>Jamb Number</label>
-					  <input type="tel" size="77" name="txtjamb" value="<?php echo $row['jamb_number'];   ?>" class="form-control" disabled >
+					  <input type="tel" size="77" name="txtjamb" value="<?php echo $row['jamb_number'];   ?>" class="form-control" >
 					  </div>
 							   <div class="form-group"><label>Jamb Score</label>
-					  <input type="tel" size="77" name="txtscore" value="<?php echo $row['jamb_score'];   ?>" class="form-control" disabled >
+					  <input type="tel" size="77" name="txtscore" value="<?php echo $row['jamb_score'];   ?>" class="form-control" >
 					  </div>
 					   <div class="form-group"><label>SSCE Detail</label>
-					  <input type="tel" size="77" name="txtexam" value="<?php echo $row['ssce_details'];   ?>" class="form-control" disabled>
+					  <input type="tel" size="77" name="txtexam" value="<?php echo $row['ssce_details'];   ?>" class="form-control">
 					  </div>	
 					   </div>
 							   <div class="form-group"><label>Faculty</label>
-					  <input type="tel" size="77" name="txtfaculty" value="<?php echo $row['faculty'];   ?>" class="form-control" disabled>
+					  <input type="tel" size="77" name="txtfaculty" value="<?php echo $row['faculty'];   ?>" class="form-control">
 					  </div>
 					   <div class="form-group"><label>Course</label>
-					  <input type="tel" size="77" name="txtdept" value="<?php echo $row['dept'];   ?>" class="form-control" disabled>
+					  <input type="tel" size="77" name="txtdept" value="<?php echo $row['dept'];   ?>" class="form-control">
 					  </div>		                   
 						  
 									 <div class="col-sm-6">

@@ -186,10 +186,10 @@ if (isset($_FILES['userImage']) && $_FILES['userImage']['error'] === 0) {
                                 <i class="fa fa-wrench"></i>
                             </a>
                             <ul class="dropdown-menu dropdown-user">
-                                <li><a href="#">Config option 1</a>
+                                <!-- <li><a href="#">Config option 1</a>
                                 </li>
                                 <li><a href="#">Config option 2</a>
-                                </li>
+                                </li> -->
                             </ul>
                             <a class="close-link">
                                 <i class="fa fa-times"></i>
@@ -238,13 +238,15 @@ $row= mysqli_fetch_array($result);
 					   <div class="form-group"><label>SSCE Detail</label>
 					  <input type="tel" size="77" name="txtexam" value="<?php echo $row['ssce_details'];   ?>" class="form-control">
 					  </div>	
-					   </div>
-							   <div class="form-group"><label>Faculty</label>
+                      
+					<div class="form-group"><label>Faculty</label>
 					  <input type="tel" size="77" name="txtfaculty" value="<?php echo $row['faculty'];   ?>" class="form-control">
 					  </div>
 					   <div class="form-group"><label>Course</label>
 					  <input type="tel" size="77" name="txtdept" value="<?php echo $row['dept'];   ?>" class="form-control">
-					  </div>		                   
+					  </div>	
+                      	         
+                      
 						  
 									 <div class="col-sm-6">
                                 
@@ -254,6 +256,8 @@ $row= mysqli_fetch_array($result);
                                   <input name="userImage" type="file" class="inputFile" />
                                 </p>
 									 </div>
+
+                                    
                                     <div>
                                         <p>&nbsp;</p>
                                         <p>&nbsp;</p>
@@ -266,6 +270,7 @@ $row= mysqli_fetch_array($result);
                                         <button class="btn btn-sm btn-primary pull-right m-t-n-xs" type="submit" name="btnedit">
                                         <div align="centre"><strong><i class="fa fa-paste"></i>  Edit Profile</strong></div>
                                         </button>
+                                  </div>
                                   </div>
                                 </form>
                             </div>

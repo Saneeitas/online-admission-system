@@ -166,9 +166,7 @@ alert('Invalid Scratch Card Details or Has Already been Used');
 									<div class="big-tagline">
 										<h2><strong>ONLINE </strong>Admission  and Information System</h2>
 	/* <p class="lead"> </p> */
-											<a href="#" class="hover-btn-new"><span>Contact Us</span></a>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											<a href="#" class="hover-btn-new"><span>Read More</span></a>
+										
 									</div>
 								</div>
 							</div><!-- end row -->            
@@ -183,11 +181,7 @@ alert('Invalid Scratch Card Details or Has Already been Used');
 							<div class="row">
 								<div class="col-md-12 col-sm-12 text-left">
 									<div class="big-tagline">
-										/* <h2 data-animation="animated zoomInRight"></strong></h2>
-										<p class="lead" data-animation="animated fadeInLeft">We inculcates positive values and offers resources for navigating the world with ease. </p> */
-											<a href="#" class="hover-btn-new"><span>Contact Us</span></a>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											<a href="#" class="hover-btn-new"><span>Read More</span></a>
+										
 									</div>
 								</div>
 							</div><!-- end row -->            
@@ -202,11 +196,7 @@ alert('Invalid Scratch Card Details or Has Already been Used');
 							<div class="row">
 								<div class="col-md-12 col-sm-12 text-center">
 									<div class="big-tagline">
-										/* <h2 data-animation="animated zoomInRight"></h2> */
-										/* <p class="lead" data-animation="animated fadeInLeft"></p> */
-											<a href="#" class="hover-btn-new"><span>Contact Us</span></a>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											<a href="#" class="hover-btn-new"><span>Read More</span></a>
+										
 									</div>
 								</div>
 							</div><!-- end row -->            
